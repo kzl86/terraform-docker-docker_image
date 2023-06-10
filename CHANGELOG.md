@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Initial base module with basic functionality
 - resource "docker_image" "this"
 - variable "name"
 - variable "keep_locally"
