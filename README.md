@@ -3,14 +3,14 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.2.6 |
-| <a name="requirement_docker"></a> [docker](#requirement\_docker) | 2.19.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.7.5 |
+| <a name="requirement_docker"></a> [docker](#requirement\_docker) | 3.0.2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_docker"></a> [docker](#provider\_docker) | 2.19.0 |
+| <a name="provider_docker"></a> [docker](#provider\_docker) | 3.0.2 |
 
 ## Modules
 
@@ -20,7 +20,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [docker_image.this](https://registry.terraform.io/providers/kreuzwerker/docker/2.19.0/docs/resources/image) | resource |
+| [docker_image.this](https://registry.terraform.io/providers/kreuzwerker/docker/3.0.2/docs/resources/image) | resource |
 
 ## Inputs
 
@@ -33,5 +33,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_latest"></a> [latest](#output\_latest) | The ID of the image in the form of sha256:<hash> image digest. Do not confuse it with the default latest tag. |
+| <a name="output_image_id"></a> [image\_id](#output\_image\_id) | The ID of the image (as seen when executing docker inspect on the image). Can be used to reference the image via its ID in other resources. |
 <!-- END_TF_DOCS -->

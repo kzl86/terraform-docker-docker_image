@@ -1,4 +1,4 @@
-output "latest" {
-    description = "The ID of the image in the form of sha256:<hash> image digest. Do not confuse it with the default latest tag."
-    value = docker_image.this.latest
+output "image_id" {
+  description = "The ID of the image (as seen when executing docker inspect on the image). Can be used to reference the image via its ID in other resources."
+  value       = docker_image.this.image_id
 }
